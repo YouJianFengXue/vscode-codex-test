@@ -6,6 +6,8 @@ def greet_user():
     """Greet the user by saying hi."""
     hello()
 
-
+def greet(name):
+    return "hello, " + name
+    
 if __name__ == "__main__":
     greet_user()
