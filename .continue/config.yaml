@@ -1,0 +1,23 @@
+name: vscode-codex-test MCP setup
+version: 1.0.0
+schema: v1
+
+mcpServers:
+  - name: gnsswx
+    type: stdio
+    command: python3
+    args:
+      - -m
+      - gnss_weather_agent.interface.mcp_server
+    cwd: /home/bokai/work/Workproject1
+    keepAlive: true
+
+# enable built-in tools for this workspace (optional if already enabled globally)
+tools:
+  builtin:
+    enable:
+      - read_file
+      - create_new_file
+      - run_terminal_command
+      - file_glob_search
+      - view_diff
