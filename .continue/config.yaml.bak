@@ -1,5 +1,0 @@
-mcpServers:
-  - name: gnsswx
-    type: http          # 如果你要连接已经运行的 HTTP 服务
-    baseUrl: http://127.0.0.1:8765/mcp
-    keepAlive: true
